@@ -1,0 +1,396 @@
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .section-hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bg-mob@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .page-top {
+    display: block;
+  }
+  .menu-nav {
+    display: flex;
+  }
+  .list-contacts {
+    display: block;
+  }
+
+  .list-contacts .list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-top: 10px;
+    padding-bottom: 16px;
+    padding-right: 16px;
+  }
+  .contacts-item {
+    height: 12px;
+  }
+  .contacts {
+    color: var(--slate);
+
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.17; /* 116.667% */
+    letter-spacing: 0.04em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* -------Menu Mobile-------- */
+
+  .menu-open-btn {
+    display: none;
+  }
+  .mob-menu {
+    display: none;
+  }
+
+  /* -------Hero-------- */
+
+  .section-hero {
+    background-color: var(--navyblue);
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bg-tab.jpg);
+    max-width: 768px;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .section-hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-bg-tab@2x.jpg);
+    }
+  }
+  .section-hero .container {
+    max-width: 768px;
+  }
+  .title {
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
+    margin-bottom: 36px;
+  }
+  .modal {
+    padding: 72px 24px 24px 24px;
+    width: 408px;
+  }
+
+  /* -------Section 2 - Advantages-------- */
+  .section-advantages .container {
+    max-width: 768px;
+  }
+
+  .list-section-advantages {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }
+  .item-section-advantages {
+    width: calc((100% - 24px) / 2);
+  }
+  /* -------Section 3 - Product-------- */
+
+  .section-product {
+    display: none;
+  }
+  /* -------Section 4 - Team-------- */
+
+  .section-team {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
+  .section-team .header-second {
+    padding-top: 96px;
+    padding-bottom: 72px;
+  }
+  .list-team {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 108px;
+    padding-right: 108px;
+    gap: 64px 24px;
+  }
+  .list-team-item {
+    width: calc((100% - 24px) / 2);
+  }
+  /* -------Section 5 - Customers-------- */
+
+  .section-customers .container {
+    max-width: 552px;
+    padding: 0;
+  }
+
+  .list-section-customers {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }
+  .item-section-customers {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: calc((100% - 48px) / 3);
+  }
+
+  /* -------Footer-------- */
+  .page-end .container {
+    max-width: 768px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 0;
+    padding-left: 108px;
+    gap: 0;
+  }
+  .left-container {
+    display: block;
+    padding-top: 96px;
+    padding-bottom: 72px;
+  }
+  .page-end .logo {
+    display: inline-block;
+  }
+  .social-media {
+    align-items: start;
+    padding-top: 96px;
+    padding-bottom: 104px;
+    padding-left: 24px;
+  }
+  .container-subscribe {
+    display: block;
+  }
+  .form-subscribe {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+  .subscribe-email {
+    width: 264px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  /* -------Header-------- */
+
+  .page-top .container {
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    padding-left: 156px;
+    padding-right: 156px;
+  }
+
+  .list-contacts {
+    font-style: normal;
+    gap: 40px;
+  }
+  .list-contacts .list {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+    padding: 0;
+  }
+  .contacts-item {
+    height: 100%;
+  }
+  .contacts {
+    color: var(--slate);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+
+  /* -------Hero-------- */
+
+  .section-hero {
+    padding-top: 188px;
+    padding-bottom: 188px;
+    background-color: var(--navyblue);
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bg.jpg);
+    max-width: 1440px;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .section-hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-bg@2x.jpg);
+    }
+  }
+  .section-hero .container {
+    max-width: 1158px;
+  }
+  .title {
+    margin-bottom: 48px;
+  }
+
+  /* -------Section 2 - Advantages-------- */
+  .section-advantages {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .section-advantages .container {
+    max-width: 1166px;
+  }
+
+  .list-section-advantages {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  .item-section-advantages {
+    display: flex;
+    width: calc((100% - 72px) / 4);
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .icons-advantages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    margin-bottom: 8px;
+    padding: 24px 100px;
+    border-radius: 4px;
+    background: var(--cloud);
+  }
+
+  .item-section-advantages .header-third {
+    margin-bottom: 8px;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.2; /* 120% */
+    letter-spacing: 0.02em;
+  }
+  /* -------Section 3 - Product-------- */
+
+  .section-product {
+    display: block;
+    padding-bottom: 120px;
+  }
+  .section-product .header-second {
+    margin-bottom: 72px;
+  }
+  .list-section-product {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin: 0 auto;
+  }
+  .item-section-product {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  /* -------Section 4 - Team-------- */
+
+  .section-team {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .section-team .header-second {
+    padding-top: 0px;
+    padding-bottom: 72px;
+  }
+  .list-team {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    gap: 24px;
+  }
+  .list-team-item {
+    width: calc((100% - 72px) / 4);
+  }
+
+  /* -------Section 5 - Customers-------- */
+
+  .section-customers {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .section-customers .container {
+    max-width: 1128px;
+  }
+
+  .list-section-customers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  .item-section-customers {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: calc((100% - 120px) / 6);
+  }
+
+  /* -------Footer-------- */
+
+  .page-end {
+    background: var(--navyblue);
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .page-end .container {
+    max-width: 1158px;
+    display: flex;
+    align-items: baseline;
+    flex-wrap: nowrap;
+    padding: 0;
+  }
+  .left-container {
+    padding: 0;
+    margin-right: 120px;
+  }
+  .page-end .logo {
+    display: inline-block;
+    margin-bottom: 16px;
+  }
+  .social-media {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  .container-subscribe {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 80px;
+  }
+  .form-subscribe {
+    display: flex;
+    gap: 24px;
+  }
+  .subscribe-email::placeholder {
+    opacity: 1;
+  }
+}
