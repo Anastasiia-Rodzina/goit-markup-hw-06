@@ -60,13 +60,14 @@ button {
 /* -------Header-------- */
 
 .page-top {
-  display: flex;
   border-bottom: 1px solid var(--cornflower);
   box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 .page-top .container {
+  max-width: 428px;
+  margin: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -86,6 +87,16 @@ button {
 .logo-studio {
   color: var(--navyblue);
 }
+.menu-open-btn {
+  display: flex;
+  background-color: transparent;
+  border: none;
+  padding: 24px 0 24px 0;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
 .top-nav {
   display: flex;
   align-items: center;
@@ -159,15 +170,6 @@ button {
 
 /* -------Menu Mobile-------- */
 
-.menu-open-btn {
-  display: flex;
-  background-color: transparent;
-  border: none;
-  padding: 24px 24px 24px 0;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
 .menu-open-btn .icons {
   stroke: var(--navyblue);
 }
@@ -388,6 +390,7 @@ button {
   align-items: flex-start;
 }
 .item-section-advantages .header-third {
+  margin: 0 auto;
   margin-bottom: 8px;
   font-family: Roboto;
   font-size: 36px;
@@ -413,12 +416,12 @@ button {
 .section-team {
   display: flex;
   background: var(--cloud);
+  padding-top: 96px;
   padding-bottom: 96px;
 }
 
 .section-team .header-second {
-  padding-top: 96px;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 .list-team {
   display: flex;
@@ -446,14 +449,13 @@ button {
 .container-card .header-third {
   margin-bottom: 8px;
 }
-
+.container-card .text {
+  margin-bottom: 8px;
+}
 .social-link-team {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 8px;
-  padding-left: 16px;
-  padding-right: 16px;
   gap: 24px;
 }
 .social-team-item {
@@ -501,9 +503,6 @@ button {
   gap: 72px 16px;
 }
 .item-section-customers {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
   width: calc((100% - 16px) / 2);
 }
 .link-customers {
@@ -657,7 +656,7 @@ button {
 .page-end {
   background: var(--navyblue);
 }
-.page-end .container {
+.box-end {
   max-width: 428px;
   display: flex;
   flex-direction: column;
@@ -665,6 +664,8 @@ button {
   padding-top: 96px;
   padding-bottom: 96px;
   gap: 72px;
+}
+.page-end .container {
 }
 .left-container {
   display: flex;
